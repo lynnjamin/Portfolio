@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="./Lynnter&#39;s Google Book App_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Lynnter's Google Book App</title>
+  <style type="text/css">.customNavBar {
+  background-color: white !important;
+}
+</style><style type="text/css">.cardClass{
+  border: 3px solid black;
+  border-radius: 0;
+}
+
+.buttonArea {
+  display: flex;
+}
+
+.searchButton {
+  margin-left: auto;
+  border-radius: 0;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 4px 4px 1px 2px black;
+}
+</style><style type="text/css">.results {
+  border: 2px solid black;
+  padding: 15px;
+}
+
+.topSection {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.lovelyButtons {
+  margin-left: auto;
+}
+
+.resultsLeftButton {
+  border-radius: 0;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 4px 4px 1px 2px black;
+  margin-right: 10px;
+}
+
+
+.resultsRightButton {
+  border-radius: 0;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 4px 4px 1px 2px black;
+}
+
+.bookDescriptionTitle {
+
+}
+
+.bookDescriptionAuthors {
+  font-size: 10px;
+}
+</style><style type="text/css">.App {
+  /* text-align: center; */
+}
+
+.content {
+  margin: 0 25px;
+}
+
+.titleText {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.subTitleText {
+  text-align: center;
+  font-size: 26px;
+}
+
+.cardClass{
+  border: 3px solid black;
+  border-radius: 0;
+  margin: 30px 0;
+}
+
+.resultsTitle {
+  margin-bottom: 20px;
+}
+
+/* .App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+</style><style type="text/css">.savedContent {
+  margin: 0 25px;
+}
+
+.savedTitleText {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.savedSubTitleText {
+  text-align: center;
+  font-size: 26px;
+}
+
+.savedCardClass{
+  border: 3px solid black;
+  border-radius: 0;
+  margin: 30px 0;
+}
+
+.savedResultsTitle {
+  margin-bottom: 20px;
+}
+</style><style type="text/css">body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+</style></head>
+  <body class="vsc-initialized">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div><div class="App"><nav class="customNavBar navbar navbar-expand-lg navbar-light bg-light"><a href="http://localhost:3000/" class="navbar-brand">Google Books</a><button aria-controls="basic-navbar-nav" type="button" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon" deluminate_imagetype="unknown"></span></button><div class="navbar-collapse collapse" id="basic-navbar-nav"><div class="mr-auto navbar-nav"><a href="http://localhost:3000/" data-rb-event-key="/" class="nav-link">Search</a><a href="http://localhost:3000/saved" data-rb-event-key="/saved" class="nav-link">Saved</a></div></div></nav><div class="content"><div class="cardClass card"><div class="card-body"><div class="titleText">(React) Google Books Search</div><div class="subTitleText">Search for and Save Books of Interest</div></div></div><div class="cardClass card"><div class="card-body"><div class="searchBox"><form class="bookForm"><div class="form-group"><label for="formBasicEmail" class="form-label">Book Search</label><input placeholder="Enter book title" type="text" id="formBasicEmail" class="form-control"></div><div class="buttonArea"><button type="submit" class="searchButton btn btn-primary">Search</button></div></form></div></div></div><div class="cardClass card"><div class="card-body"><div class="resultsTitle">Results</div><div class="results"><div class="topSection"><div class="bookDescription"><div class="bookDescriptionTitle">Harry Potter and the Cursed Child – Parts One and Two (Special Rehearsal Edition)</div><div class="bookDescriptionAuthors">Written By J.K. Rowling, John Tiffany, Jack Thorne</div></div><div class="lovelyButtons"><button type="submit" class="resultsLeftButton btn btn-primary">View</button><button type="submit" class="resultsRightButton btn btn-primary">Save</button></div></div><div class="media"><img width="64" height="64" class="mr-3" src="./Lynnter&#39;s Google Book App_files/content" alt="Generic placeholder"><div class="media-body"><p>Based on an original new story by J.K. Rowling, Jack Thorne and John Tiffany, a new play by Jack Thorne, Harry Potter and the Cursed Child is the eighth story in the Harry Potter series and the first official Harry Potter story to be presented on stage. The play received its world premiere in London’s West End on 30th July 2016. It was always difficult being Harry Potter and it isn’t much easier now that he is an overworked employee of the Ministry of Magic, a husband and father of three school-age children. While Harry grapples with a past that refuses to stay where it belongs, his youngest son Albus must struggle with the weight of a family legacy he never wanted. As past and present fuse ominously, both father and son learn the uncomfortable truth: sometimes, darkness comes from unexpected places.</p></div></div></div><div class="results"><div class="topSection"><div class="bookDescription"><div class="bookDescriptionTitle">Fantastic Beasts and Where to Find Them: The Original Screenplay</div><div class="bookDescriptionAuthors">Written By J.K. Rowling</div></div><div class="lovelyButtons"><button type="submit" class="resultsLeftButton btn btn-primary">View</button><button type="submit" class="resultsRightButton btn btn-primary">Save</button></div></div><div class="media"><img width="64" height="64" class="mr-3" src="./Lynnter&#39;s Google Book App_files/content(1)" alt="Generic placeholder"><div class="media-body"><p>When Magizoologist Newt Scamander arrives in New York, he intends his stay to be just a brief stopover. However, when his magical case is misplaced and some of Newt's fantastic beasts escape, it spells trouble for everyone... Inspired by the original Hogwart’s textbook by Newt Scamander, Fantastic Beasts and Where to Find Them: The Original screenplay marks the screenwriting debut of J.K. Rowling, author of the beloved and internationally bestselling Harry Potter books. A feat of imagination and featuring a cast of remarkable characters and magical creatures, this is epic adventure-packed storytelling at its very best. Whether an existing fan or new to the wizarding world, this is a perfect addition for any film lover or reader’s bookshelf. The film Fantastic Beasts and Where to Find Them will have its theatrical release on 18th November 2016.</p></div></div></div><div class="results"><div class="topSection"><div class="bookDescription"><div class="bookDescriptionTitle">The Irresistible Rise of Harry Potter</div><div class="bookDescriptionAuthors">Written By Andrew Blake</div></div><div class="lovelyButtons"><button type="submit" class="resultsLeftButton btn btn-primary">View</button><button type="submit" class="resultsRightButton btn btn-primary">Save</button></div></div><div class="media"><img width="64" height="64" class="mr-3" src="./Lynnter&#39;s Google Book App_files/content(2)" alt="Generic placeholder"><div class="media-body"><p>Blake's examination of the Potter phenomenon raises serious questions about the condition of the publishing industry, filmmaking, and the ways in which the Potter consumer campaign has changed ideas about literature and reading.</p></div></div></div><div class="results"><div class="topSection"><div class="bookDescription"><div class="bookDescriptionTitle">Harry Potter - A Journey Through A History of Magic</div><div class="bookDescriptionAuthors">Written By British Library</div></div><div class="lovelyButtons"><button type="submit" class="resultsLeftButton btn btn-primary">View</button><button type="submit" class="resultsRightButton btn btn-primary">Save</button></div></div><div class="media"><img width="64" height="64" class="mr-3" src="./Lynnter&#39;s Google Book App_files/content(3)" alt="Generic placeholder"><div class="media-body"><p>The official companion book to the British Library exhibition and the ultimate gift for Harry Potter fans! As the British Library unveils a very special new exhibition in the UK, Harry Potter: A History of Magic, readers everywhere are invited on an enchanting journey through the Hogwarts curriculum, from Care of Magical Creatures and Herbology to Defense Against the Dark Arts, Astronomy, and more in this eBook uncovering thousands of years of magical history. Prepare to be amazed by artifacts released from the archives of the British Library, unseen sketches and manuscript pages from J.K. Rowling, and incredible illustrations from artist Jim Kay. Discover the truth behind the origins of the Philosopher’s Stone, monstrous dragons, and troublesome trolls; examine real-life wands and find out what actually makes a mandrake scream; pore over remarkable pages from da Vinci’s notebook; and discover the oldest atlas of the night sky. Carefully curated by the British Library and full of extraordinary treasures from all over the world, this is an unforgettable journey exploring the history of the magic at the heart of the Harry Potter stories.</p></div></div></div><div class="results"><div class="topSection"><div class="bookDescription"><div class="bookDescriptionTitle">The Ivory Tower and Harry Potter</div><div class="bookDescriptionAuthors">Written By Lana A. Whited</div></div><div class="lovelyButtons"><button type="submit" class="resultsLeftButton btn btn-primary">View</button><button type="submit" class="resultsRightButton btn btn-primary">Save</button></div></div><div class="media"><img width="64" height="64" class="mr-3" src="./Lynnter&#39;s Google Book App_files/content(4)" alt="Generic placeholder"><div class="media-body"><p>Now available in paper, The Ivory Tower and Harry Potter is the first book-length analysis of J. K. Rowling's work from a broad range of perspectives within literature, folklore, psychology, sociology, and popular culture. A significant portion of the book explores the Harry Potter series' literary ancestors, including magic and fantasy works by Ursula K. LeGuin, Monica Furlong, Jill Murphy, and others, as well as previous works about the British boarding school experience. Other chapters explore the moral and ethical dimensions of Harry's world, including objections to the series raised within some religious circles. In her new epilogue, Lana A. Whited brings this volume up to date by covering Rowling's latest book, Harry Potter and the Order of the Phoenix.</p></div></div></div><div class="results"><div class="topSection"><div class="bookDescription"><div class="bookDescriptionTitle">Baptizing Harry Potter</div><div class="bookDescriptionAuthors">Written By Luke Bell</div></div><div class="lovelyButtons"><button type="submit" class="resultsLeftButton btn btn-primary">View</button><button type="submit" class="resultsRightButton btn btn-primary">Save</button></div></div><div class="media"><img width="64" height="64" class="mr-3" src="./Lynnter&#39;s Google Book App_files/content(5)" alt="Generic placeholder"><div class="media-body"><p>The scope and tragedy of the thing : the structure of the series -- More things in heaven and earth : going beyond the normal -- As if a man were author of himself : good against evil -- Be absolute for death : life and death -- Power is made perfect in weakness : power and weakness -- To lay down one's life for one's friends : love and sacrifice -- It is essential that you understand this : freedom and determination -- A pretty boring life : the hidden and the ostentatious -- Telling it like it is : the struggle for truth -- They will see God : purity of heart and purity of blood.</p></div></div></div><div class="results"><div class="topSection"><div class="bookDescription"><div class="bookDescriptionTitle">Harry Potter and the Philosopher's Stone</div><div class="bookDescriptionAuthors">Written By J.K. Rowling</div></div><div class="lovelyButtons"><button type="submit" class="resultsLeftButton btn btn-primary">View</button><button type="submit" class="resultsRightButton btn btn-primary">Save</button></div></div><div class="media"><img width="64" height="64" class="mr-3" src="./Lynnter&#39;s Google Book App_files/content(6)" alt="Generic placeholder"><div class="media-body"><p>"Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'." Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!</p></div></div></div><div class="results"><div class="topSection"><div class="bookDescription"><div class="bookDescriptionTitle">Harry Potter and the Sorcerer's Stone</div><div class="bookDescriptionAuthors">Written By J. K. Rowling</div></div><div class="lovelyButtons"><button type="submit" class="resultsLeftButton btn btn-primary">View</button><button type="submit" class="resultsRightButton btn btn-primary">Save</button></div></div><div class="media"><img width="64" height="64" class="mr-3" src="./Lynnter&#39;s Google Book App_files/content(7)" alt="Generic placeholder"><div class="media-body"><p></p></div></div></div><div class="results"><div class="topSection"><div class="bookDescription"><div class="bookDescriptionTitle">Heroism in the Harry Potter Series</div><div class="bookDescriptionAuthors">Written By Katrin Berndt, Lena Steveker</div></div><div class="lovelyButtons"><button type="submit" class="resultsLeftButton btn btn-primary">View</button><button type="submit" class="resultsRightButton btn btn-primary">Save</button></div></div><div class="media"><img width="64" height="64" class="mr-3" src="./Lynnter&#39;s Google Book App_files/content(8)" alt="Generic placeholder"><div class="media-body"><p>Taking up the various conceptions of heroism that are conjured in the Harry Potter series, this collection examines the ways fictional heroism in the twenty-first century challenges the idealized forms of a somewhat simplistic masculinity associated with genres like the epic, romance and classic adventure story. The collection's three sections address broad issues related to genre, Harry Potter's development as the central heroic character and the question of who qualifies as a hero in the Harry Potter series. Among the topics are Harry Potter as both epic and postmodern hero, the series as a modern-day example of psychomachia, the series' indebtedness to the Gothic tradition, Harry's development in the first six film adaptations, Harry Potter and the idea of the English gentleman, Hermione Granger's explicitly female version of heroism, adult role models in Harry Potter, and the complex depictions of heroism exhibited by the series' minor characters. Together, the essays suggest that the Harry Potter novels rely on established generic, moral and popular codes to develop new and genuine ways of expressing what a globalized world has applauded as ethically exemplary models of heroism based on responsibility, courage, humility and kindness.</p></div></div></div><div class="results"><div class="topSection"><div class="bookDescription"><div class="bookDescriptionTitle">Harry Potter and the Classical World</div><div class="bookDescriptionAuthors">Written By Richard A. Spencer</div></div><div class="lovelyButtons"><button type="submit" class="resultsLeftButton btn btn-primary">View</button><button type="submit" class="resultsRightButton btn btn-primary">Save</button></div></div><div class="media"><img width="64" height="64" class="mr-3" src="./Lynnter&#39;s Google Book App_files/content(9)" alt="Generic placeholder"><div class="media-body"><p>J.K. Rowling has drawn deeply from classical sources to inform and color her Harry Potter novels, with allusions ranging from the obvious to the obscure. “Fluffy,” the vicious three-headed dog in Harry Potter and the Sorcerer’s Stone, is clearly a repackaging of Cerberus, the hellhound of Greek and Roman mythology. But the significance of Rowling’s quotation from Aeschylus at the front of Harry Potter and the Deathly Hallows is a matter of speculation. Her use of classical material is often presented with irony and humor. This extensive analysis of the Harry Potter series examines Rowling’s wide range of allusion to classical characters and themes and her varied use of classical languages. Chapters discuss Harry and Narcissus, Dumbledore’s many classical predecessors, Lord Voldemort’s likeness to mythical figures, and magic in Harry Potter and classical antiquity—among many topics.</p></div></div></div></div></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./Lynnter&#39;s Google Book App_files/bundle.js"></script><script src="./Lynnter&#39;s Google Book App_files/1.chunk.js"></script><script src="./Lynnter&#39;s Google Book App_files/main.chunk.js"></script><script src="./Lynnter&#39;s Google Book App_files/main.1204d0a522a3bd2ef2c0.hot-update.js"></script>
+
+</body></html>

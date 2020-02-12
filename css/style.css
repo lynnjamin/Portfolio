@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   padding: 2em 0;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   right: 0;
@@ -335,7 +335,7 @@ header {
 #colorlib-progress,
 #colorlib-contact,
 #colorlib-about {
-  padding: 10em 0;
+  padding: 1em 0;
   clear: both;
   position: relative; }
   @media screen and (max-width: 768px) {
@@ -1264,7 +1264,6 @@ input[type="text"] {
   color: #CA82F8; }
 
 #footer {
-  padding: 8em 0;
   display: block;
   width: 100%; }
   #footer h2 {

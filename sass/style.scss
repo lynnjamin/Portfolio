@@ -478,7 +478,7 @@ header{
 #colorlib-progress,
 #colorlib-contact,
 #colorlib-about{
-	padding: 10em 0;
+	// padding: 10em 0;
 	clear: both;
 	position: relative;
 	@media screen and(max-width: $screen-sm){
@@ -1471,7 +1471,7 @@ input[type="text"] {
 
 // footer
 #footer{
-	padding: 8em 0;
+	// padding: 0;
 	display: block;
 	width: 100%;
 	// background: $brand-white;
