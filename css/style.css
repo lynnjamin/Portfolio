@@ -1314,6 +1314,37 @@ input[type="text"] {
   opacity: 0; }
 
 
+  /* contact status */
+  #status {
+    margin: -40px auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    width: 70%;
+    max-width: 400px;
+    text-align: center;
+  }
+  #status.send-mail{
+    background-color: #CA82F8;
+    color: #fafafa;
+    animation: status 4s ease forwards;
+  }
+
+  @keyframes status {
+    0%{
+      opacity: 1;
+      pointer-events: all;
+    }
+    90%{
+      opacity: 1;
+      pointer-events: all;
+    }
+    100%{
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
 /* Add Animation */
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0} 

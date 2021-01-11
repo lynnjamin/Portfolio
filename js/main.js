@@ -166,18 +166,19 @@
     // get the form elements defined in your form HTML above
 
     var form = document.getElementById('my-form');
-    var button = document.getElementById('sendMessage');
-    var status = document.getElementById('myModal');
+    var status = document.getElementById('status');
 
     // Success and Error functions for after the form is submitted
 
     function success() {
       form.reset();
-      status.innerHTML = 'Thanks!';
+      status.classList.add('send-mail');
+      status.innerHTML = 'Thank you! Your message has been sent!';
     }
 
     function error() {
-      status.innerHTML = 'Oops! There was a problem.';
+      status.classList.add('send-mail');
+      status.innerHTML = 'Please make sure the email is correct.';
     }
 
     // handle the form submission event
